@@ -126,11 +126,10 @@ class ViewController: UIViewController {
                 } else if currentOperation == .avg {
                     count += 1
                     if (runningTotal == 0) {
-                        runningTotal = (Double(lhs))! + (Double(lhs))!
+                        runningTotal = (Double(lhs))! + (Double(rhs))!
                     } else {
                         runningTotal += Double(rhs)!
                     }
-                    runningTotal += (Double(lhs))!
                     result = "\(Double(runningTotal) / Double(count))"
                 }
                 lhs = result
